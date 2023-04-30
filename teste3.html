@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("aa.png");
+        background-size: cover;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 10px;
+      }
+      .content {
+        width: 1000px;
+        height: 480px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 80px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      /* Adicione regras de estilo de mídia aqui */
+      @media (max-width: 768px) {
+        .nav {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+        }
+        .nav a {
+          margin: 10px 0;
+        }
+        .content {
+          width: 90%;
+        }
+      }
+      #infos {
+        width: 300px;
+        height: 450px;
+        float:left;
+        border-color: white;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 20px;
+      }
+      #bio {
+        width: 650px;
+        height: 450px;
+        float:right;
+      }
+      #infosDet {
+        width: 270px;
+        height: 100px;
+        color: white;
+        text-align: left;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Posts</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="content">
+        <div id="infos">
+          <img src="e.jpg" alt="Smiley face" style="float:center;width:120px;height:120px;margin:20px;border-radius:100px;border-color: white;">
+          <div id="infosDet">
+            <p>Name: Francisco Lucas</p>
+            <p>Pseud: Nikola Wissenklaus</p>
+            <p>Email: sr.chico.source@gmail.com</p>
+            <br>
+            <p>
+              <a href="https://github.com/NikolaWissenklaus" ><img src="git.png" alt="Smiley face" style="width:120px;height:50px;margin:10px;"></a>
+              <a href="https://www.linkedin.com/in/francisco-lucas-231b02169" ><img src="link.png" alt="Smiley face" style="width:50px;height:50px;margin:10px;"></a>
+            </p>
+          </div>
+        </div>
+        <div id="bio">
+          <p>
+            <h1>Resuminho rápido</h1>
+          </p>
+          <p>
+            Olá, tudo bem? Atualmente atuo como Engenheiro de Dados em grandes projetos de clientes de diversos segmentos (Financeiro, Video Streaming, E-Commerce Varejo, Telecom, Adquirência e etc), além de atuar na arquitetura e implementação de coleta de dados Web, App e AMP.
+          </p>
+          <br>
+          <hr>
+          <br>
+          <p>
+            <h2>Especializações</h2> 
+          </p>
+          <p>
+            <p>
+              <img src="ga4.png" alt="Smiley face" style="width:110px;height:50px;margin:10px;border-radius:10px;">
+              <img src="ads.png" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+              <img src="segment.jpg" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+              <img src="af.png" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+            </p>
+            <p>
+              <img src="cs.png" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+              <img src="op.png" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+              <img src="iab.png" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+            </p>
+            <p>
+              <img src="td.jpg" alt="Smiley face" style="width:50;height:50px;margin:10px;border-radius:10px;">
+              <img src="gcp.png" alt="Smiley face" style="width:80;height:50px;margin:10px;border-radius:10px;">
+            
+            </p>
+          </p>
+
+        </div>
+    </div>
+    <div style="font-family: 'Brush Script MT', cursive;" class="footer">
+      By: Nikola Wissenklaus (FLS)
+    </div>
+  </body>
+</html>

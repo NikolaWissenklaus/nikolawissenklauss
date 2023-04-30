@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("aa.png");
+        background-size: cover;
+        color: white;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 10px;
+      }
+      .content {
+        width: 80%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 80px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      /* Adicione regras de estilo de mídia aqui */
+      @media (max-width: 768px) {
+        .nav {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+        }
+        .nav a {
+          margin: 10px 0;
+        }
+        .content {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Posts</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="content">
+      <h1>Hello there!</h1>
+      <p>Você está acessando o site do Chico, sendo este apenas um site para testar algumas implementações de Analytics e explicar alguns projetos no meu Github ;)</p>
+      <img src="eu.png" alt="Smiley face" style="float:center;width:200px;height:200px;margin:50px;border-radius:100px;">
+    </div>
+    <div style="font-family: 'Brush Script MT', cursive;" class="footer">
+      By: Nikola Wissenklaus (FLS)
+    </div>
+  </body>
+</html>
