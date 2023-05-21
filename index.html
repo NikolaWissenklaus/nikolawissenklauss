@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DH0YN5PCY7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-DH0YN5PCY7');
+    </script>
+
     <style>
       * {
         margin: 0;
@@ -78,25 +88,23 @@
         }
       }
     </style>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NDPTQ79');</script>
-    <!-- End Google Tag Manager -->
+    
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPTQ79"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      gtag("event", "page_view",{
+        "page": "home",
+        "tecnologia_ambiente": "html",
+        "metodo_tagueamento": "gtag"
+      });
+    </script>
+    
     <div class="nav">
-      <a href="#">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="#">Posts</a>
-      <a href="#">Contato</a>
+      <a href="#" onclick="gtag('event', 'clicou_btn',{'nome_botao':'home','page':'home','tecnologia_ambiente':'html','metodo_tagueamento':'gtag'})">Home</a>
+      <a href="sobre.html" onclick="gtag('event', 'clicou_btn',{'nome_botao':'sobre','page':'home','tecnologia_ambiente':'html','metodo_tagueamento':'gtag'})">Sobre</a>
+      <a href="projetos.html" onclick="gtag('event', 'clicou_btn',{'nome_botao':'projetos','page':'home','tecnologia_ambiente':'html','metodo_tagueamento':'gtag'})">Projetos</a>
+      <a href="#" onclick="gtag('event', 'clicou_btn',{'nome_botao':'posts','page':'home','tecnologia_ambiente':'html','metodo_tagueamento':'gtag'})">Posts</a>
+      <a href="#" onclick="gtag('event', 'clicou_btn',{'nome_botao':'contato','page':'home','tecnologia_ambiente':'html','metodo_tagueamento':'gtag'})">Contato</a>
     </div>
     <div class="content">
       <h1>Hello there!</h1>
